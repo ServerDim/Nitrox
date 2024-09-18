@@ -115,7 +115,6 @@ namespace NitroxLauncher
 
             lastFindSubnauticaTask = Task.Factory.StartNew(() =>
             {
-                PirateDetection.TriggerOnDirectory(path);
 
                 if (!FileSystem.Instance.IsWritable(Directory.GetCurrentDirectory()) || !FileSystem.Instance.IsWritable(path))
                 {
